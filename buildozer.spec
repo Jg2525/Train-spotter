@@ -37,7 +37,7 @@ version = 1.0
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3==3.10.11,hostpython3==3.10.11,kivy==master,requests,urllib3,chardet,idna,pillow
+requirements = python3,kivy==master
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -80,21 +80,21 @@ fullscreen = 0
 # red, blue, green, black, white, gray, cyan, magenta, yellow, lightgray,
 # darkgray, grey, lightgrey, darkgrey, aqua, fuchsia, lime, maroon, navy,
 # olive, purple, silver, teal.
-android.presplash_color = #3f4142
+# android.presplash_color = #3f4142
 
 # (string) Presplash animation using Lottie format.
 # see https://lottiefiles.com/ for examples and https://airbnb.design/lottie/
 # for general documentation.
 # Lottie files can be created using various tools, like Adobe After Effect or Synfig.
 #android.presplash_lottie = "path/to/lottie/file.json"
-presplash.filename = %(source.dir)s/assets/images/splash.png
-icon.filename = %(source.dir)s/assets/images/icon.png
+#presplash.filename = %(source.dir)s/assets/images/splash.png
+#icon.filename = %(source.dir)s/assets/images/icon.png
 # (str) Adaptive icon of the application (used if Android API level is 26+ at runtime)
 #icon.adaptive_foreground.filename = %(source.dir)s/data/icon_fg.png
 #icon.adaptive_background.filename = %(source.dir)s/data/icon_bg.png
 
 # (list) Permissions
-android.permissions = VIBRATE,QUERY_ALL_PACKAGES,INTERNET
+#android.permissions = VIBRATE,QUERY_ALL_PACKAGES,INTERNET
 
 # (list) features (adds uses-feature -tags to manifest)
 #android.features = android.hardware.usb.host
@@ -155,11 +155,11 @@ android.accept_sdk_license = True
 # (str) Full name including package path of the Java class that implements Python Service
 # use that parameter to set custom Java class instead of PythonService
 #android.service_class_name = org.kivy.android.PythonService
-android.home_app = True
+# android.home_app = True
 # (str) Android app theme, default is ok for Kivy-based app
 # android.apptheme = "@android:style/Theme.NoTitleBar"
 
-android.display_cutout = shortEdges
+# android.display_cutout = shortEdges
 # (list) Pattern to whitelist for the whole project
 #android.whitelist =
 
