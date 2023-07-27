@@ -138,14 +138,14 @@ class Home(Screen):
 
         self.menutext = Label(
             text="Train Spotter",
-            font_size=30
+            font_size=90
         )
         self.window.add_widget(self.menutext)
 
         self.logbtn = Button(
             text="Log New Trip",
-            font_size=30,
-            size_hint=(0.75, 0.5),
+            font_size=60,
+            size_hint=(0.75, 0.3),
             background_color=get_color_from_hex('#ff5aa4'),
             background_normal=""
         )
@@ -154,8 +154,8 @@ class Home(Screen):
 
         self.searchbtn = Button(
             text="Search / Filter Logs",
-            font_size=30,
-            size_hint=(0.75, 0.5),
+            font_size=60,
+            size_hint=(0.75, 0.3),
             background_color=get_color_from_hex('#ffa500'),
             background_normal=""
         )
@@ -164,8 +164,8 @@ class Home(Screen):
 
         self.achbtn = Button(
             text="Your Achievements",
-            font_size=30,
-            size_hint=(0.75, 0.5),
+            font_size=60,
+            size_hint=(0.75, 0.3),
             background_color=get_color_from_hex('#8cc63e'),
             background_normal=""
         )
@@ -174,8 +174,8 @@ class Home(Screen):
 
         self.stsbtn = Button(
             text="Your Statistics",
-            font_size=30,
-            size_hint=(0.75, 0.5),
+            font_size=60,
+            size_hint=(0.75, 0.3),
             background_color=get_color_from_hex('#010385'),
             background_normal=""
         )
@@ -376,7 +376,7 @@ class Log3(Screen):
             multiline=False,
             size_hint=(1, .5),
             font_size=30,
-            input_type=("text"),
+            input_type=("number"),
         )
         self.window.add_widget(self.exact)
         layout = BoxLayout(orientation='horizontal')
