@@ -1,4 +1,4 @@
-name: Build
+name: TS
 on: [push, pull_request]
 
 jobs:
@@ -18,11 +18,5 @@ jobs:
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: package-kivyhome
-          path: ${{ steps.buildozer.outputs.filename }}
-
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: package
+          name: Train_Spotter_App
           path: ${{ steps.buildozer.outputs.filename }}
